@@ -1,49 +1,51 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(120deg, #f0f4f8 0%, #eaf6ff 100%);
+  background: #111;
   margin: 0;
   padding: 0;
-  color: #222;
+  color: #fff;
   min-height: 100vh;
   transition: background 0.6s;
 }
 .container {
   max-width: 900px;
   margin: 3rem auto;
-  background: rgba(255,255,255,0.95);
+  background: #181818;
   border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 32px rgba(255, 221, 51, 0.12);
   overflow: hidden;
-  border: 1px solid #e0e7ef;
+  border: 2px solid #ffd900;
   animation: fadeInUp 1s cubic-bezier(.4,0,.2,1);
 }
 .header {
   text-align: center;
   padding: 2.5rem 2rem 1.5rem 2rem;
-  background: linear-gradient(90deg, #c9e7ff 0%, #f0f4f8 100%);
-  border-bottom: 1px solid #e0e7ef;
+  background: linear-gradient(90deg, #ffd900 0%, #181818 100%);
+  border-bottom: 2px solid #ffd900;
 }
 .avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin: 0 auto 1rem auto;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  border: 3px solid #fff;
+  box-shadow: 0 2px 12px rgba(255,221,51,0.15);
+  border: 3px solid #ffd900;
   object-fit: cover;
+  background: #fff;
   transition: box-shadow 0.3s;
 }
 .avatar:hover {
-  box-shadow: 0 4px 24px rgba(0,120,215,0.15);
+  box-shadow: 0 4px 24px rgba(255,221,51,0.25);
 }
 .title {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0.5rem 0 0.2rem 0;
   letter-spacing: 1px;
+  color: #ffd900;
 }
 .subtitle {
-  color: #0078d7;
+  color: #ffd900;
   font-size: 1.2rem;
   margin-bottom: 1.2rem;
 }
@@ -53,7 +55,7 @@ body {
 .nav-link {
   display: inline-block;
   margin: 0 1.2rem;
-  color: #0078d7;
+  color: #ffd900;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -64,14 +66,14 @@ body {
   display: block;
   height: 2px;
   width: 0;
-  background: #0078d7;
+  background: #ffd900;
   transition: width 0.3s;
   position: absolute;
   left: 0;
   bottom: -4px;
 }
 .nav-link:hover {
-  color: #005fa3;
+  color: #fff200;
 }
 .nav-link:hover::after {
   width: 100%;
@@ -80,18 +82,18 @@ body {
   padding: 2rem;
 }
 .card {
-  background: #fff;
+  background: #222;
   border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 16px rgba(255,221,51,0.10);
   margin-bottom: 2.5rem;
   padding: 2rem 1.5rem;
-  border: 1px solid #e0e7ef;
+  border: 1.5px solid #ffd900;
   transition: box-shadow 0.4s, transform 0.4s;
   position: relative;
   overflow: hidden;
 }
 .card:hover {
-  box-shadow: 0 8px 32px rgba(0,120,215,0.10);
+  box-shadow: 0 8px 32px rgba(255,221,51,0.18);
   transform: translateY(-4px) scale(1.02);
 }
 .fade-in {
@@ -114,35 +116,38 @@ body {
 .contact-form textarea {
   padding: 0.8rem;
   border-radius: 8px;
-  border: 1px solid #c9e7ff;
+  border: 1.5px solid #ffd900;
   font-size: 1rem;
+  background: #181818;
+  color: #fff;
   transition: border 0.3s;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border: 1.5px solid #0078d7;
+  border: 2px solid #ffd900;
   outline: none;
 }
 .contact-form button {
-  background: linear-gradient(90deg, #0078d7 60%, #c9e7ff 100%);
-  color: #fff;
+  background: linear-gradient(90deg, #ffd900 60%, #181818 100%);
+  color: #181818;
   border: none;
   border-radius: 8px;
   padding: 0.9rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,120,215,0.08);
-  transition: background 0.3s;
+  box-shadow: 0 2px 8px rgba(255,221,51,0.10);
+  transition: background 0.3s, color 0.3s;
 }
 .contact-form button:hover {
-  background: #005fa3;
+  background: #fff200;
+  color: #111;
 }
 .footer {
   text-align: center;
   padding: 1.2rem;
-  color: #666;
-  background: #f7f7f7;
-  border-top: 1px solid #e0e0e0;
+  color: #ffd900;
+  background: #181818;
+  border-top: 2px solid #ffd900;
   font-size: 1rem;
 }
