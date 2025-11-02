@@ -1,3 +1,19 @@
+/* Responsive Google Forms Embed */
+.form-embed {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.form-embed iframe {
+  width: 100%;
+  min-width: 200px;
+  max-width: 100%;
+  border: none;
+  height: 700px;
+  background: transparent;
+}
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #111;
