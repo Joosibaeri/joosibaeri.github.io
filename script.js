@@ -32,11 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-      const mailto = `mailto:contact@joosibaeri.xyz?subject=Kontakt von ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0ANachricht: ${encodeURIComponent(message)}`;
-      window.location.href = mailto;
+      emailjs.sendForm('smtp.strato.de', 'template_jtbnpup', contactForm)
+        .then(function() {
+          alert('Nachricht erfolgreich versendet!');
+          contactForm.reset();
+        }, function(error) {
+          alert('Fehler beim Senden: ' + error.text);
+        });
     });
   }
 });
